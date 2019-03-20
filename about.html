@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Шаблон</title>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="AnalyticumPlus"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,700" rel="stylesheet">
+<!-- end -->
+
+<!-- Подключение css -->
+	<link rel="stylesheet" href="css/libs-min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+<!-- Font-Awesome -->
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"> -->
+
+<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Recaptcha -->
+	<script async src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- Yandex map -->
+	<script async src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+<!--[if lt IE 9]>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	
+<!-- Modals -->
+	<div style="display: none">
+		<div id="feedback-modal" class="feedback-modal">
+			<span class="close-modal arcticmodal-close"></span>
+			<form class="feedback-form">
+				<h3>Форма обратной связи</h3>
+
+				<label>
+					<span>Имя*</span>
+					<input type="text" name="aname">
+				</label>
+
+				<label>
+					<span>Телефон*</span>
+					<input type="text">
+				</label>
+
+				<label>
+					<span>Удобное время для звонка:</span>
+					<input type="text">
+				</label>
+
+				<div class="g-recaptcha" data-sitekey="6Lcg4msUAAAAAJEOVTuSlaMSTpkFEe8NGdQv3q1X"></div>
+
+				<p>Отправляя форму вы соглашаетесь на обработку персональных данных</p>
+				<p>* — Помечены поля, которые необходимо заполнить</p>
+
+				<button class="feedback"><span>Заказать</span></button>
+			</form>
+
+		</div>
+	</div>
+
+<!-- HEADER -->
+	<header class="header" id="header">
+		<div class="container">
+			
+			<div class="header-wrap">
+
+				<div class="hamburger"><a href="#"></a></div>
+				<div class="hader-cart hader-cart-adp">
+					<a href="#"><i class="i-cart"></i><span>0</span></a>
+				</div>
+
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.svg" alt="">
+					</a>
+				</div>
+				
+				<div class="header-info">
+					
+					<div class="header-info-left">
+						<div class="header-phones">
+							<a href="tel:+79816860301">+7(981)686-03-01</a>
+							<a href="tel:88122441011">8(812)244-10-11</a>
+						</div>
+						
+						<form class="header-search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+
+					<div class="header-info-right">
+						<div class="hader-cart">
+							<a href="#"><i class="i-cart"></i>Корзина: <span>0</span></a>
+						</div>
+						<a href="#feedback-modal" class="feedback"><span>Заказать звонок</span></a>
+					</div>
+
+				</div>
+
+				<div class="header-info-adp">
+
+					<div class="header-phones header-phones-adp">
+						<a href="tel:+79816860301">+7(981)686-03-01</a><br>
+						<a href="tel:88122441011">8(812)244-10-11</a>
+					</div>
+
+					<div class="header-info-adp-wrap">
+						<form class="header-search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+						<a href="#feedback-modal" class="feedback"><span>Заказать звонок</span></a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="navigation">
+				<div class="hamb-close"><a href="#"></a></div>
+				<ul class="nav nav-desctop">
+					<li><a href="index.html">Главная</a></li>
+					<li>
+						<a href="#">Каталог</a>
+						<ul>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="about.html">О продукции</a></li>
+					<!-- <li><a href="production.html">Наше производство</a></li> -->
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="reviews.html">Отзывы</a></li>
+					<li><a href="gallery.html">Галерея</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</header>
+<!-- end HEADER -->
+
+<!-- CONTENT -->
+<div class="content">
+
+	<div class="container">
+		<div class="page">
+
+			<ul class="breadcrumbs">
+				<li><a href="#">Главная</a></li>
+				<li>О продукции</li>
+			</ul>
+			
+			<h1 class="page-title">О продукции</h1>
+
+			<!-- page -->
+			<div class="about">
+				
+				<div class="about-wrap">
+					<p class="about-title">Лестница серии “Восток”</p>
+					<p>
+						Разрабатывалась с учётом накопленных знаний о строительстве загородных домов в России. Как правило, люди оставляют крайне мало места в доме для подъёма на второй этаж. Стояла задача сделать изделие, которое максимально удовлетворит потребность населения. Таким образом, появилась самая популярная лестница  «Восток-Элегант»
+					</p>
+					<p>
+						Эта модель является лидером продаж в Санкт-Петербурге. Удачное сочетание внешних габаритов и изящности конструкции  подходит для большинства домов дачного строительства. Возможность выбора ограждения с любой стороны позволило удовлетворить потребности любого клиента. Балясины от простых деревянных, более сложных с металлическими вставками или холодной ковки, до сложных резьбовых  придают лестницам изысканность.   Установка пригласительных ступеней на большинстве моделей делает обычную серийную лестницу ничем не отличимую от заказной.  
+					</p>
+				</div>
+
+				<!-- <div class="about-wrap">
+					<p class="about-title">Лестницы с поворотом на 90 градусов.</p>
+					<p>Лестницы с забежными ступенями делятся на лестницы:</p>
+
+					<div class="about-type-stairs">
+
+						<div class="about-type-stair">
+							<span>Нижний поворот</span>
+							<a href="images/about/bottom-turn.jpg"><img src="images/about/bottom-turn.jpg" alt=""></a>
+						</div>
+
+						<div class="about-type-stair">
+							<span>Верхний поворот</span>
+							<img src="images/about/top-turn.jpg" alt="">
+						</div>
+
+						<div class="about-type-stair">
+							<span>Средний  поворот</span>
+							<img src="images/about/middle-turn.jpg" alt="">
+						</div>
+
+					</div>
+				</div> -->
+
+				<div class="about-content-stairs">
+					
+					<div class="about-stairs-wrap">
+						<p class="about-stairs-wrap__title">Лестницы с поворотом на 90 градусов.</p>
+						
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/select-stairs.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Как выбирать лестницу.</p>
+
+								<div class="about-stairs__text">
+									<p>
+										При выборе высоты лестницы  нужно учитывать существующий шаг подъема 207мм. А так же, что последней ступенью будет являться
+										пол второго этажа.
+									</p>
+									<p>
+										Все лестницы подбираются по длине выходного марша. Заходной марш подбирается с учетом высоты потолка. Так что бы при спуске не удариться головой о перекрытие.
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#">«Восток-Элегант» Г-760</a></p>
+									<p><a href="#">«Восток-Элегант» Г-770</a></p>
+									<p><a href="#">«Восток-Элегант» Г-950</a></p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/bottom-turn.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Нижний поворот.</p>
+
+								<div class="about-stairs__text">
+									<p>
+										Данная модель подходит для помещения с узким и длинным проемом. Разворот в нижней части лестницы позволяет сразу же оказаться в лестничном проеме.  Что очень важно при низкой высоте потолка.  Нижний поворот выпускается шириной 790мм и 950мм.
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#">«Восток-Элегант» Г-760</a></p>
+									<p><a href="#">«Восток-Элегант» Г-950</a></p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/middle-turn.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Средний поворот.</p>
+
+								<div class="about-stairs__text">
+									<p>
+										Для данной модели нужен широкий или повторяющей поворот лестницы, проем.  Сочетание высоты и внешних габаритов, делает данную модель самой востребованной во всей линейке наших лестниц. Данная модель выпускается шириной 760мм и 950мм. Возможность установить блок пригласительных ступеней на лестницы с длинной первого марша более трех ступеней.
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#">«Восток-Элегант» Г-760</a></p>
+									<p><a href="#">«Восток-Элегант» Г-950</a></p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/top-turn.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Верхний поворот.</p>
+
+								<div class="about-stairs__text">
+									<p>
+										Данная модель подходит для помещения с узким и длинным проемом.  Разворот в верхней части лестницы  позволяет совершить поворот, находясь внутри проема. Такой вариант лестницы возможен, если внизу достаточно свободного места для захода. И очень удобен, если  вверху проема стоит  стена.  Данная модель выпускается шириной 760мм и 950мм. На данную модель можно установить блок пригласительных ступеней как с одной стороны так и с двух сторон первого марша.
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#">«Восток-Элегант» ВП-760</a></p>
+									<p><a href="#">«Восток-Элегант» ВП-950</a></p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/unique-development.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Уникальная разработка.</p>
+
+								<div class="about-stairs__text">
+									<p>
+										Поворотная лестница, ступени « Гусиный шаг».
+										Данная разработка не имеет аналога в России.
+										При очень маленьком внешнем  размере лестницы, ступени «Гусиный шаг» позволяют очень комфортно спускаться с лестницы.
+										Стоит отметить, что спуск с лестницы является 
+										более важным фактором, чем подъем наверх. 
+										Эти лестницы делаются только шириной 760мм 
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#">«Восток-Элегант» ГШГ-760</a></p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/top-turn.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">«Восток-Классик»</p>
+
+								<div class="about-stairs__text">
+									<p>
+										Модель выполняется шириной 800мм. Отличие от «Восток-Элегант»,  косоур по внутренней стороне и пригласительная ступень.  Точеные столбы на входе и выходе.
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#">«Восток-Классик» Г-800</a></p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/stairs-platform.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Лестница с площадкой.</p>
+
+								<div class="about-stairs__text">
+									<p>
+										Модели лестниц с площадкой требуют больше места, чем забежные. Но при этом высота подъема ступени 194мм делает ее удобнее для комфортного  движения.  Промежуточная площадка облегчает подъем людям пожилого возраста. На этих моделях установлена пригласительная ступень. Которую можно заменить блоком из двух пригласительных ступеней (при наличии трех и более ступеней на первом марше) а так же можно установить подступенки. 
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#">«Восток-Элегант» ПГ-950</a></p>
+									<p><a href="#">«Восток-Элегант» ПГ-750</a></p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="about-stairs-wrap">
+						<p class="about-stairs-wrap__title">Лестницы с поворотом на 180 градусов.</p>
+						
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/trairs-turn-180.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Лестница с забежными ступенями.</p>
+
+								<div class="about-stairs__text">
+									<p>
+										Лестница с забежными ступенями, разворот на 180 градусов. Изящная конструкция с небольшими габаритами, позволяет комфортно подняться и спуститься со второго этажа. Проем для таких лестниц нужен квадратный или прямоугольный в зависимости от модели.  Чаще всего устанавливается в лестничный проем огороженный стенами. 
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#">«Восток-Элегант» П-760</a></p>
+									<p><a href="#">«Восток-Элегант» П-950</a></p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/with-two-turns.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Лестница с двумя разделенными поворотами.</p>
+
+								<div class="about-stairs__text">
+									<p>
+										Лестница с двумя разделенными поворотами чаще всего устанавливается в длинный и узкий проем. Короткий заход и выход позволяет почти сразу оказаться внутри проема, что очень важно при небольшой высоте потолка. 
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#">«Восток-Элегант» П2 -760</a></p>
+									<p><a href="#">«Восток-Элегант» П2-950</a></p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/stairs-platform.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Лестница с площадкой.</p>
+
+								<div class="about-stairs__text">
+									<p>
+										Высота подъема ступени на данной лестнице 194мм. Пригласительная ступень и возможность установить подступенки.  Ширина площадки от 1600мм до 1900мм для лестниц  ПП-750. И 2000мм-2500мм для лестниц ПП-950. Шаг изменения ширины площадки 100мм.
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#"> «Восток-Элегант» ПП-950</a></p>
+									<p><a href="#">«Восток-Элегант» ПП-750</a></p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/blank-steps.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Лестница с забежными ступенями.</p>
+
+								<div class="about-stairs__text">
+									<p>
+										Почти на все модели лестниц  серии «Восток» можно установить две первые пригласительные ступени.
+										Ограничение на установку, не менее трех ступеней на первом марше.
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<!-- <p><a href="#"> «Восток-Элегант» ПП-950</a></p> -->
+									<!-- <p><a href="#">«Восток-Элегант» ПП-750</a></p> -->
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="about-stairs-wrap">
+						<p class="about-stairs-wrap__title">Лестницы  «Прямой марш»</p>
+						
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/stairs-platform2.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Прямой марш</p>
+
+								<div class="about-stairs__text">
+									<p>Комплектуется двумя пригласительными ступенями</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#">«Восток-Элегант» ПМ-950</a></p>
+									<p><a href="#">«Восток-Элегант» ПМ-750</a></p>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="about-stairs-wrap">
+						<p class="about-stairs-wrap__title">Лестницы  «Гусиный шаг»</p>
+						
+						<div class="about-stairs">
+
+							<div class="about-stairs__img">
+								<img src="images/about/stairs-goose-step.jpg" alt="">
+							</div>
+
+							<div class="about-stairs__content">
+								<p class="about-stairs__title">Гусиный шаг</p>
+
+								<div class="about-stairs__text">
+									<p>
+										Самая маленькая и самая недорогая лестница из всей серии. Разработана для помещений с очень ограниченным пространством. Чаще всего используется для подъема на чердак.
+									</p>
+								</div>
+								<div class="about-stairs__names">
+									<p><a href="#">«Восток-Элегант» ГШ-760</a></p>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				<!-- 	<div class="about-stairs">
+
+						<div class="about-stairs__img">
+							<img src="images/about/stairs-platform.jpg" alt="">
+						</div>
+
+						<div class="about-stairs__content">
+							<p class="about-stairs__title">Лестница с площадкой.</p>
+
+							<div class="about-stairs__text">
+								<p>
+									Отличается от забежных высотой шага 194мм. И наличием косоура по внутренней стороне лестницы. Варианты расположения площадки, третьей по счету ступени в начале лестницы и предпоследней ступенью на выходе. На эти лестницы можно установить балясины с 
+									квадратным низом и любые круглые
+								</p>
+								<p>
+									Этот тип лестницы делается шириной 950мм и 800мм <br>
+									На эти модели можно установить подступенки
+								</p>
+							</div>
+							<div class="about-stairs__names">
+								<p><a href="#">«Восток-Элегант» ПГ-750</a></p>
+								<p><a href="#">«Восток-Элегант» ПГ-950</a></p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="about-stairs">
+
+						<div class="about-stairs__img">
+							<img src="images/about/trairs-turn-180.jpg" alt="">
+						</div>
+
+						<div class="about-stairs__content">
+							<p class="about-stairs__title">Лестницы с поворотом на 180 градусов.</p>
+
+							<div class="about-stairs__text">
+								<p>
+									Лестницы с забежными ступенями на центральном столбе.
+								</p>
+								<p>
+									Эти лестницы делаются шириной 950мм и 760мм по внешним столбам. 
+								</p>
+							</div>
+							<div class="about-stairs__names">
+								<p><a href="#">«Восток-Элегант» П-760</a></p>
+								<p><a href="#">«Восток-Элегант» П-950</a></p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="about-stairs">
+
+						<div class="about-stairs__img">
+							<img src="images/about/invitation-stair.jpg" alt="">
+						</div>
+
+						<div class="about-stairs__content">
+							<p class="about-stairs__title">Пригласительные ступени.</p>
+
+							<div class="about-stairs__text">
+								<p>
+									Почти на все модели лестниц  серии «Восток» можно установить. Две первые пригласительные ступени.
+									Ограничение на установку таких ступеней, 
+									не менее трех ступеней на первом марше.
+								</p>
+								<p>
+									На этих лестницах меняется длина всех трех маршей. <br>
+									Средний марш от 2000мм до 2800мм с шагом 200мм
+								</p>
+							</div>
+							<div class="about-stairs__names">
+								<p><a href="#">«Восток-Элегант» П2-760</a></p>
+								<p><a href="#">«Восток-Элегант» П2-950</a></p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="about-stairs">
+
+						<div class="about-stairs__img">
+							<img src="images/about/stairs-platform2.jpg" alt="">
+						</div>
+
+						<div class="about-stairs__content">
+							<p class="about-stairs__title">Лестница с площадкой.</p>
+
+							<div class="about-stairs__text">
+								<p>
+									Лестница с площадкой имеет все те же самые  характеристики Что и 90Г с площадкой. Нужно учитывать, что для лестниц с площадкой требуется значительно больше места, чем для забежных.	
+
+								</p>
+							</div>
+							<div class="about-stairs__names">
+								<p><a href="#">«Восток-Элегант» ПП-800</a></p>
+								<p><a href="#">«Восток-Элегант» ПП-950</a></p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="about-stairs">
+
+						<div class="about-stairs__img">
+							<img src="images/about/stairs-goose-step.jpg" alt="">
+						</div>
+
+						<div class="about-stairs__content">
+							<p class="about-stairs__title">Лестница Гусиный шаг.</p>
+
+							<div class="about-stairs__text">
+								<p>
+									Самая маленькая и самая недорогая лестница из всей серии.
+									Разработана для помещений с очень ограниченным пространством.
+									Чаще всего используется для подъема на чердак.
+								</p>
+							</div>
+							<div class="about-stairs__names">
+								<p><a href="#">«Восток-Элегант» ГШ-760</a></p>
+							</div>
+						</div>
+
+					</div> -->
+
+				</div>
+
+			</div>
+			<!-- end page -->
+
+		</div>
+	</div>
+
+</div>
+<!-- end CONTENT -->
+
+<!-- FOOTER -->
+	<footer class="footer" id="footer">
+		<div class="container">
+			
+			<ul class="f-nav">
+				<li><a href="#">Главная</a></li>
+				<!-- <li><a href="#">Описание продукции</a></li> -->
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">О продукции</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Галерея</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			
+			<div class="f-wrap">
+				<div class="f-map">
+					<div class="f-map__marks">
+						<div class="map-address active on-map-address" data-map="#f-map-one">
+							<p>
+								пр. Народного Ополчения, д. 22,<br> Центр строительства <br>«Русская деревня»,<br> 2-й этаж, секция 209
+							</p>
+							<a href="tel:8126556042">Тел.: (812) 655-60-42</a>
+						</div>
+						<div class="map-address on-map-address" data-map="#f-map-two">
+							<p>
+								Парголово Выборгское шоссе, 369, корп. 6, 2-ой этаж, секция 209
+							</p>
+							<a href="tel:8126556042">Тел.: (812) 655-60-42</a>
+						</div>
+					</div>
+					<div class="f-map__maps">
+						<div class="f-map__map" id="f-map-one"><a href="#" class="close-arctic"></a></div>
+						<div class="f-map__map f-map__map-two" id="f-map-two"><a href="#" class="close-arctic"></a></div>
+					</div>
+				</div>
+
+				<div class="f-bottom">
+					<div class="f-bottom__left">
+						<p>
+							тел.: (812) 244-10-11 <br>
+							факс: (812) 612-93-63 <br>
+							E-mail: lignars@mail.ru newstair@gmail.com
+						</p>
+					</div>
+					<div class="f-bottom__right">
+						<p>
+							© 2017 ООО «Лигнариус» Винтовые лестницы для дома. <br>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div style="display: none">
+				<div class="f-map-one" id="f-map-one"></div>
+			</div> -->
+
+		</div>
+	</footer>
+<!-- end FOOTER -->
+
+<!-- Подключение javscript -->
+	<script src="js/libs-min.js"></script>
+	<script src="js/common.js"></script>
+<!-- end -->
+
+</body>
+</html>

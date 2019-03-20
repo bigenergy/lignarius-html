@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Шаблон</title>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="AnalyticumPlus"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,700" rel="stylesheet">
+<!-- end -->
+
+<!-- Подключение css -->
+	<link rel="stylesheet" href="css/libs-min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+<!-- Font-Awesome -->
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"> -->
+
+<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Recaptcha -->
+	<script async src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- Yandex map -->
+	<script async src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+<!--[if lt IE 9]>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	
+<!-- Modals -->
+	<div style="display: none">
+		<div id="feedback-modal" class="feedback-modal">
+			<span class="close-modal arcticmodal-close"></span>
+			<form class="feedback-form">
+				<h3>Форма обратной связи</h3>
+
+				<label>
+					<span>Имя*</span>
+					<input type="text" name="aname">
+				</label>
+
+				<label>
+					<span>Телефон*</span>
+					<input type="text">
+				</label>
+
+				<label>
+					<span>Удобное время для звонка:</span>
+					<input type="text">
+				</label>
+
+				<div class="g-recaptcha" data-sitekey="6Lcg4msUAAAAAJEOVTuSlaMSTpkFEe8NGdQv3q1X"></div>
+
+				<p>Отправляя форму вы соглашаетесь на обработку персональных данных</p>
+				<p>* — Помечены поля, которые необходимо заполнить</p>
+
+				<button class="feedback"><span>Заказать</span></button>
+			</form>
+
+		</div>
+	</div>
+
+<!-- HEADER -->
+	<header class="header" id="header">
+		<div class="container">
+			
+			<div class="header-wrap">
+
+				<div class="hamburger"><a href="#"></a></div>
+				<div class="hader-cart hader-cart-adp">
+					<a href="#"><i class="i-cart"></i><span>0</span></a>
+				</div>
+
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.svg" alt="">
+					</a>
+				</div>
+				
+				<div class="header-info">
+					
+					<div class="header-info-left">
+						<div class="header-phones">
+							<a href="tel:+79816860301">+7(981)686-03-01</a>
+							<a href="tel:88122441011">8(812)244-10-11</a>
+						</div>
+						
+						<form class="header-search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+
+					<div class="header-info-right">
+						<div class="hader-cart">
+							<a href="#"><i class="i-cart"></i>Корзина: <span>0</span></a>
+						</div>
+						<a href="#feedback-modal" class="feedback"><span>Заказать звонок</span></a>
+					</div>
+
+				</div>
+
+				<div class="header-info-adp">
+
+					<div class="header-phones header-phones-adp">
+						<a href="tel:+79816860301">+7(981)686-03-01</a><br>
+						<a href="tel:88122441011">8(812)244-10-11</a>
+					</div>
+
+					<div class="header-info-adp-wrap">
+						<form class="header-search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+						<a href="#feedback-modal" class="feedback"><span>Заказать звонок</span></a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="navigation">
+				<div class="hamb-close"><a href="#"></a></div>
+				<ul class="nav nav-desctop">
+					<li><a href="index.html">Главная</a></li>
+					<li>
+						<a href="#">Каталог</a>
+						<ul>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="about.html">О продукции</a></li>
+					<!-- <li><a href="production.html">Наше производство</a></li> -->
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="reviews.html">Отзывы</a></li>
+					<li><a href="gallery.html">Галерея</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</header>
+<!-- end HEADER -->
+
+<!-- CONTENT -->
+<div class="content">
+
+	<div class="container">
+		<div class="page">
+
+			<ul class="breadcrumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li>"Восток-Классик" Г-800-02</li>
+			</ul>
+			
+			<!-- <h1 class="page-title">Деревянные лестницы</h1> -->
+
+			<!-- page -->
+			<div class="single">
+				
+				<div style="display: none;">
+					<form action="/" class="single-solutions" id="ready-solutions">
+						<span class="close-modal arcticmodal-close"></span>
+						<h2 class="page-title single-solutions__title">Варианты готовых решений</h2>
+						<p>Выбрерите лестницу:</p>
+
+						<div class="solutions solutions-carousel">
+							<div class="solutions__slide">
+
+								<label class="solution">
+									<div class="solution__img">
+										<img src="images/dynamic/single.png" alt="">
+									</div>
+									<input type="radio" class="solution__radio" name="solution" value="Лестница А" checked="true">
+									<p class="solution__name">Лестница А</p>
+									<p class="solution__price">30 000 руб.</p>
+									<div class="solution__hideinfo">
+										<p class="th-name">Лестница А</p>
+										<div class="th-description">
+											<p>
+												Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет оценить значение позиций, занимаемых участниками в отношении
+											</p>
+											<ul>
+												<li>Lorem ipsum dolor sit amet.</li>
+												<li>Lorem ipsum dolor sit amet.</li>
+												<li>Lorem ipsum dolor sit amet.</li>
+											</ul>
+										</div>
+									</div>
+								</label>
+
+							</div>
+							<div class="solutions__slide">
+								
+								<label class="solution">
+									<div class="solution__img">
+										<img src="images/dynamic/single.png" alt="">
+									</div>
+									<input type="radio" class="solution__radio" name="solution" value="Лестница А">
+									<p class="solution__name">Лестница А</p>
+									<p class="solution__price">30 000 руб.</p>
+									<div class="solution__hideinfo">
+										<p class="th-name">Лестница B</p>
+										<div class="th-description">
+											<p>
+												Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет оценить значение позиций, занимаемых участниками в отношении
+											</p>
+										</div>
+									</div>
+								</label>
+
+							</div>
+							<div class="solutions__slide">
+								
+								<label class="solution">
+									<div class="solution__img">
+										<img src="images/dynamic/single.png" alt="">
+									</div>
+									<input type="radio" class="solution__radio" name="solution" value="Лестница А">
+									<p class="solution__name">Лестница C</p>
+									<p class="solution__price">30 000 руб.</p>
+									<div class="solution__hideinfo">
+										<p class="th-name">Лестница А</p>
+										<div class="th-description">
+											<p>
+												Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет оценить значение позиций, занимаемых участниками в отношении
+											</p>
+										</div>
+									</div>
+								</label>
+
+							</div>
+							<div class="solutions__slide">
+								
+								<label class="solution">
+									<div class="solution__img">
+										<img src="images/dynamic/single.png" alt="">
+									</div>
+									<input type="radio" class="solution__radio" name="solution" value="Лестница А">
+									<p class="solution__name">Лестница А</p>
+									<p class="solution__price">30 000 руб.</p>
+									<div class="solution__hideinfo">
+										<p class="th-name">Лестница А</p>
+										<div class="th-description">
+											<p>
+												Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет оценить значение позиций, занимаемых участниками в отношении
+											</p>
+										</div>
+									</div>
+								</label>
+
+							</div>
+							<div class="solutions__slide">
+								
+								<label class="solution">
+									<div class="solution__img">
+										<img src="images/dynamic/single.png" alt="">
+									</div>
+									<input type="radio" class="solution__radio" name="solution" value="Лестница А">
+									<p class="solution__name">Лестница А</p>
+									<p class="solution__price">30 000 руб.</p>
+									<div class="solution__hideinfo">
+										<p class="th-name">Лестница А</p>
+										<div class="th-description">
+											<p>
+												Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет оценить значение позиций, занимаемых участниками в отношении
+											</p>
+										</div>
+									</div>
+								</label>
+
+							</div>
+							<div class="solutions__slide">
+								
+								<label class="solution">
+									<div class="solution__img">
+										<img src="images/dynamic/single.png" alt="">
+									</div>
+									<input type="radio" class="solution__radio" name="solution" value="Лестница А">
+									<p class="solution__name">Лестница А</p>
+									<p class="solution__price">30 000 руб.</p>
+									<div class="solution__hideinfo">
+										<p class="th-name">Лестница А</p>
+										<div class="th-description">
+											<p>
+												Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет оценить значение позиций, занимаемых участниками в отношении
+											</p>
+										</div>
+									</div>
+								</label>
+
+							</div>
+							<div class="solutions__slide">
+								
+								<label class="solution">
+									<div class="solution__img">
+										<img src="images/dynamic/single.png" alt="">
+									</div>
+									<input type="radio" class="solution__radio" name="solution" value="Лестница А">
+									<p class="solution__name">Лестница А</p>
+									<p class="solution__price">30 000 руб.</p>
+									<div class="solution__hideinfo">
+										<p class="th-name">Лестница А</p>
+										<div class="th-description">
+											<p>
+												Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет оценить значение позиций, занимаемых участниками в отношении
+											</p>
+										</div>
+									</div>
+								</label>
+
+							</div>
+						</div>
+
+						<div class="solution-description">
+							<p class="solution-description__name on-solution-title">Лестница А</p>
+							<div class="solution-description__text on-solution-description">
+								<p>
+									Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет оценить значение позиций, занимаемых участниками в отношении
+								</p>
+								<ul>
+									<li>Lorem ipsum dolor sit amet.</li>
+									<li>Lorem ipsum dolor sit amet.</li>
+									<li>Lorem ipsum dolor sit amet.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="solution-select">
+							<button type="submit" class="feedback"><span>Выбрать решение</span></button>
+						</div>
+
+					</form>
+				</div>
+
+				<div class="row">
+					<div class="col-xl-7">
+
+						<div class="single-main">
+							
+							<!-- Modal Order Form  -->
+							<div style="display: none">
+								<div id="do-order" class="do-order-modal">
+									<form class="feedback-form do-order" method="GET">
+										<span class="close-modal arcticmodal-close"></span>
+
+										<input type="hidden" name="product" value='"ВОСТОК-КЛАССИК" Г-800-02'>
+										<input type="hidden" name="id_product" value='1'>
+										<input type="hidden" name="id_solution" value='4'>
+
+										<div class="do-order__top">
+											<h3>Заполните контактные данные</h3>
+										</div>
+
+										<div class="do-order__content">
+
+											<div class="do-order__product">Заказ: <span>"Восток-Классик" Г-800-02</span></div>
+
+											<label>
+												<span>ФИО*</span>
+												<input type="text" name="full-name">
+											</label>
+
+											<label>
+												<span>Ваш телефон*</span>
+												<input type="text" name="phone">
+											</label>
+
+											<label>
+												<span>Ваша почта*</span>
+												<input type="email" name="email">
+											</label>
+
+											<label>
+												<span>Ваш город*</span>
+												<input type="text" name="city">
+											</label>
+
+											<label>
+												<span>Удобное время для звонка:</span>
+												<input type="time" name="time-call">
+											</label>
+
+											<div class="g-recaptcha" data-sitekey="6Lcg4msUAAAAAJEOVTuSlaMSTpkFEe8NGdQv3q1X"></div>
+
+											<p>Отправляя форму вы соглашаетесь на обработку персональных данных</p>
+											<p>* — Помечены поля, которые необходимо заполнить</p>
+
+											<button class="feedback"><span>Оставить заявку</span></button>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<h1 class="page-title single-title">"ВОСТОК-КЛАССИК" Г-800-02</h1>
+							
+							<div class="single-content-wrap">
+								
+								<div class="single-images">
+									<div class="single-images__image">
+										<a href="images/dynamic/single.png" class="main-single-image" style="background-image: url(images/dynamic/single.png);" data-lightbox="gallery">
+											<!-- <img src="images/dynamic/single.png" alt=""> -->
+										</a>
+									</div>
+									<div class="single-images__list" id="signle-carousel">
+										<div class="top"></div>
+										<ul>
+											<li data-src-full="images/dynamic/single.png"
+												data-src-medium="images/dynamic/single.png"
+												style="background-image: url(images/dynamic/single.png);">
+											</li>
+											<li data-src-full="images/dynamic/single.png"
+												data-src-medium="images/dynamic/single.png"
+												style="background-image: url(images/dynamic/single.png);">
+											</li>
+											<li data-src-full="images/dynamic/single.png"
+												data-src-medium="images/dynamic/single.png"
+												style="background-image: url(images/dynamic/single.png);">
+											</li>
+											<li data-src-full="images/dynamic/single.png"
+												data-src-medium="images/dynamic/single.png"
+												style="background-image: url(images/dynamic/single.png);">
+											</li>
+											<li data-src-full="images/dynamic/single.png"
+												data-src-medium="images/dynamic/single.png"
+												style="background-image: url(images/dynamic/single.png);">
+											</li>									
+										</ul>
+										<div class="bottom"></div>
+									</div>
+								</div>
+
+								<div class="single-content">
+									
+									<div class="single-price">
+										<p>цена:</p>
+										<p class="single-price__price">33 600 руб.*</p>
+										<p class="single-price__small">*за лестницу без балюстрады</p>
+									</div>
+
+									<div class="single-btns">
+										<p><a href="#ready-solutions" class="single-btns__select">Выбрать готовую лестницу</a></p>
+										<p><a href="collect-stairs.html" class="single-btns__collect">Собрать лестницу самому</a></p>
+									</div>
+									
+									<div class="single-description">
+										<p>
+											Разработка конструкции лестницы по заданным размерам. <br>Возможность выбора породы дерева и их комбинаций.
+										</p>
+									</div>
+									
+									<div class="single-links">
+										<div class="single-links__links">
+											<p><a href="#" class="single-links__print">Печать</a></p>
+											<p><a href="#" class="single-links__pdf">Скачать pdf</a></p>
+										</div>
+										<a href="#view-3d" class="single-links__preview">Просмотр <span>3d</span></a>
+									</div>
+
+								</div>
+
+							</div>
+
+							<a href="#do-order" class="feedback single-feedback"><span>оставить заявку</span></a>
+
+						</div>
+
+					</div>
+					<div class="col-xl-5">
+
+						<div class="single-prop">
+							<h2 class="page-title">Характеристики</h2>
+							<ul class="single-list">
+								<li>
+									<span class="prop">Габариты, мм:</span>
+									<span class="value">1345х2150мм</span>
+								</li>
+								<li>
+									<span class="prop">Высота последней ступени, мм:</span>
+									<span class="value">2500мм</span>
+								</li>
+								<li>
+									<span class="prop">Количество ступеней:</span>
+									<span class="value">12</span>
+								</li>
+								<li>
+									<span class="prop">Лестница подходит для подъема на высоту, мм:</span>
+									<span class="value">2500 и 2700 мм</span>
+								</li>
+								<li>
+									<span class="prop">Возможность сделать подступенок:</span>
+									<span class="value">Да</span>
+								</li>
+								<li>
+									<span class="prop">Ширина проема, мм:</span>
+									<span class="value">950мм</span>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="single-3d" id="view-3d">
+					<h2 class="page-title">3d модель лестницы</h2>
+					<div class="modal-3d">
+						
+						<div class="sketchfab-embed-wrapper"><iframe width="100%" height="560" src="https://sketchfab.com/models/b62d750bf2c74c89b48369c368d74acf/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>	
+			<!-- end page -->
+
+		</div>
+	</div>
+
+</div>
+<!-- end CONTENT -->
+
+<!-- FOOTER -->
+	<footer class="footer" id="footer">
+		<div class="container">
+			
+			<ul class="f-nav">
+				<li><a href="#">Главная</a></li>
+				<!-- <li><a href="#">Описание продукции</a></li> -->
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">О продукции</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Галерея</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			
+			<div class="f-wrap">
+				<div class="f-map">
+					<div class="f-map__marks">
+						<div class="map-address active on-map-address" data-map="#f-map-one">
+							<p>
+								пр. Народного Ополчения, д. 22,<br> Центр строительства <br>«Русская деревня»,<br> 2-й этаж, секция 209
+							</p>
+							<a href="tel:8126556042">Тел.: (812) 655-60-42</a>
+						</div>
+						<div class="map-address on-map-address" data-map="#f-map-two">
+							<p>
+								Парголово Выборгское шоссе, 369, корп. 6, 2-ой этаж, секция 209
+							</p>
+							<a href="tel:8126556042">Тел.: (812) 655-60-42</a>
+						</div>
+					</div>
+					<div class="f-map__maps">
+						<div class="f-map__map" id="f-map-one"><a href="#" class="close-arctic"></a></div>
+						<div class="f-map__map f-map__map-two" id="f-map-two"><a href="#" class="close-arctic"></a></div>
+					</div>
+				</div>
+
+				<div class="f-bottom">
+					<div class="f-bottom__left">
+						<p>
+							тел.: (812) 244-10-11 <br>
+							факс: (812) 612-93-63 <br>
+							E-mail: lignars@mail.ru newstair@gmail.com
+						</p>
+					</div>
+					<div class="f-bottom__right">
+						<p>
+							© 2017 ООО «Лигнариус» Винтовые лестницы для дома. <br>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div style="display: none">
+				<div class="f-map-one" id="f-map-one"></div>
+			</div> -->
+
+		</div>
+	</footer>
+<!-- end FOOTER -->
+
+<!-- Подключение javscript -->
+	<script src="js/libs-min.js"></script>
+	<script src="js/common.js"></script>
+<!-- end -->
+
+</body>
+</html>

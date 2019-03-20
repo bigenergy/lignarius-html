@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Шаблон</title>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="AnalyticumPlus"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,700" rel="stylesheet">
+<!-- end -->
+
+<!-- Подключение css -->
+	<link rel="stylesheet" href="css/libs-min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+<!-- Font-Awesome -->
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"> -->
+
+<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Recaptcha -->
+	<script async src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- Yandex map -->
+	<script async src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+<!--[if lt IE 9]>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	
+<!-- Modals -->
+	<div style="display: none">
+		<div id="feedback-modal" class="feedback-modal">
+			<span class="close-modal arcticmodal-close"></span>
+			<form class="feedback-form">
+				<h3>Форма обратной связи</h3>
+
+				<label>
+					<span>Имя*</span>
+					<input type="text" name="aname">
+				</label>
+
+				<label>
+					<span>Телефон*</span>
+					<input type="text">
+				</label>
+
+				<label>
+					<span>Удобное время для звонка:</span>
+					<input type="text">
+				</label>
+
+				<div class="g-recaptcha" data-sitekey="6Lcg4msUAAAAAJEOVTuSlaMSTpkFEe8NGdQv3q1X"></div>
+
+				<p>Отправляя форму вы соглашаетесь на обработку персональных данных</p>
+				<p>* — Помечены поля, которые необходимо заполнить</p>
+
+				<button class="feedback"><span>Заказать</span></button>
+			</form>
+
+		</div>
+	</div>
+
+<!-- HEADER -->
+	<header class="header" id="header">
+		<div class="container">
+			
+			<div class="header-wrap">
+
+				<div class="hamburger"><a href="#"></a></div>
+				<div class="hader-cart hader-cart-adp">
+					<a href="#"><i class="i-cart"></i><span>0</span></a>
+				</div>
+
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.svg" alt="">
+					</a>
+				</div>
+				
+				<div class="header-info">
+					
+					<div class="header-info-left">
+						<div class="header-phones">
+							<a href="tel:+79816860301">+7(981)686-03-01</a>
+							<a href="tel:88122441011">8(812)244-10-11</a>
+						</div>
+						
+						<form class="header-search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+
+					<div class="header-info-right">
+						<div class="hader-cart">
+							<a href="#"><i class="i-cart"></i>Корзина: <span>0</span></a>
+						</div>
+						<a href="#feedback-modal" class="feedback"><span>Заказать звонок</span></a>
+					</div>
+
+				</div>
+
+				<div class="header-info-adp">
+
+					<div class="header-phones header-phones-adp">
+						<a href="tel:+79816860301">+7(981)686-03-01</a><br>
+						<a href="tel:88122441011">8(812)244-10-11</a>
+					</div>
+
+					<div class="header-info-adp-wrap">
+						<form class="header-search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+						<a href="#feedback-modal" class="feedback"><span>Заказать звонок</span></a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="navigation">
+				<div class="hamb-close"><a href="#"></a></div>
+				<ul class="nav nav-desctop">
+					<li><a href="index.html">Главная</a></li>
+					<li>
+						<a href="#">Каталог</a>
+						<ul>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="about.html">О продукции</a></li>
+					<!-- <li><a href="production.html">Наше производство</a></li> -->
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="reviews.html">Отзывы</a></li>
+					<li><a href="gallery.html">Галерея</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</header>
+<!-- end HEADER -->
+
+<!-- CONTENT -->
+<div class="content">
+
+	<div class="container">
+		<div class="page">
+
+			<ul class="breadcrumbs">
+				<li><a href="#">Главная</a></li>
+				<li>Галерея</li>
+			</ul>
+			
+			<h1 class="page-title">Галерея</h1>
+
+			<!-- page -->
+			<div class="gallery">
+
+				<div class="gallery-content">
+
+					<div class="row">
+						<div class="col-xxs col-6 col-sm-6 col-md-4 col-lg-3">
+							
+							<a href="gallery-single.html" class="gallery-item">
+								<div class="gallery-item__img" style="background-image: url(images/dynamic/gallery.png);"></div>
+								<span class="gallery-item__name" data-mh="gallery-name">Лестницы на заказ</span>
+							</a>
+
+						</div>
+						<div class="col-xxs col-6 col-sm-6 col-md-4 col-lg-3">
+							
+							<a href="gallery-single.html" class="gallery-item">
+								<div class="gallery-item__img" style="background-image: url(images/dynamic/gallery.png);"></div>
+								<span class="gallery-item__name" data-mh="gallery-name">Серийные лестницы</span>
+							</a>
+
+						</div>
+						<div class="col-xxs col-6 col-sm-6 col-md-4 col-lg-3">
+							
+							<a href="gallery-single.html" class="gallery-item">
+								<div class="gallery-item__img" style="background-image: url(images/dynamic/gallery.png);"></div>
+								<span class="gallery-item__name" data-mh="gallery-name">Г-образные</span>
+							</a>
+
+						</div>
+						<div class="col-xxs col-6 col-sm-6 col-md-4 col-lg-3">
+							
+							<a href="gallery-single.html" class="gallery-item">
+								<div class="gallery-item__img" style="background-image: url(images/dynamic/gallery.png);"></div>
+								<span class="gallery-item__name" data-mh="gallery-name">Деревянные лестницы</span>
+							</a>
+
+						</div>
+						<div class="col-xxs col-6 col-sm-6 col-md-4 col-lg-3">
+							
+							<a href="gallery-single.html" class="gallery-item">
+								<div class="gallery-item__img" style="background-image: url(images/dynamic/gallery.png);"></div>
+								<span class="gallery-item__name" data-mh="gallery-name">Для коттеджа</span>
+							</a>
+
+						</div>
+						<div class="col-xxs col-6 col-sm-6 col-md-4 col-lg-3">
+							
+							<a href="gallery-single.html" class="gallery-item">
+								<div class="gallery-item__img" style="background-image: url(images/dynamic/gallery.png);"></div>
+								<span class="gallery-item__name" data-mh="gallery-name">Готовые решения лестниц</span>
+							</a>
+
+						</div>
+						<div class="col-xxs col-6 col-sm-6 col-md-4 col-lg-3">
+							
+							<a href="gallery-single.html" class="gallery-item">
+								<div class="gallery-item__img" style="background-image: url(images/dynamic/gallery.png);"></div>
+								<span class="gallery-item__name" data-mh="gallery-name">Салоны серийных лестниц «восток»</span>
+							</a>
+
+						</div>
+						<div class="col-xxs col-6 col-sm-6 col-md-4 col-lg-3">
+							
+							<a href="gallery-single.html" class="gallery-item">
+								<div class="gallery-item__img" style="background-image: url(images/dynamic/gallery.png);"></div>
+								<span class="gallery-item__name" data-mh="gallery-name">Элитные</span>
+							</a>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>						
+			<!-- end page -->
+
+		</div>
+	</div>
+
+</div>
+<!-- end CONTENT -->
+
+<!-- FOOTER -->
+	<footer class="footer" id="footer">
+		<div class="container">
+			
+			<ul class="f-nav">
+				<li><a href="#">Главная</a></li>
+				<!-- <li><a href="#">Описание продукции</a></li> -->
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">О продукции</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Галерея</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			
+			<div class="f-wrap">
+				<div class="f-map">
+					<div class="f-map__marks">
+						<div class="map-address active on-map-address" data-map="#f-map-one">
+							<p>
+								пр. Народного Ополчения, д. 22,<br> Центр строительства <br>«Русская деревня»,<br> 2-й этаж, секция 209
+							</p>
+							<a href="tel:8126556042">Тел.: (812) 655-60-42</a>
+						</div>
+						<div class="map-address on-map-address" data-map="#f-map-two">
+							<p>
+								Парголово Выборгское шоссе, 369, корп. 6, 2-ой этаж, секция 209
+							</p>
+							<a href="tel:8126556042">Тел.: (812) 655-60-42</a>
+						</div>
+					</div>
+					<div class="f-map__maps">
+						<div class="f-map__map" id="f-map-one"><a href="#" class="close-arctic"></a></div>
+						<div class="f-map__map f-map__map-two" id="f-map-two"><a href="#" class="close-arctic"></a></div>
+					</div>
+				</div>
+
+				<div class="f-bottom">
+					<div class="f-bottom__left">
+						<p>
+							тел.: (812) 244-10-11 <br>
+							факс: (812) 612-93-63 <br>
+							E-mail: lignars@mail.ru newstair@gmail.com
+						</p>
+					</div>
+					<div class="f-bottom__right">
+						<p>
+							© 2017 ООО «Лигнариус» Винтовые лестницы для дома. <br>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div style="display: none">
+				<div class="f-map-one" id="f-map-one"></div>
+			</div> -->
+
+		</div>
+	</footer>
+<!-- end FOOTER -->
+
+<!-- Подключение javscript -->
+	<script src="js/libs-min.js"></script>
+	<script src="js/common.js"></script>
+<!-- end -->
+
+</body>
+</html>

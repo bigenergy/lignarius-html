@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Шаблон</title>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="AnalyticumPlus"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,700" rel="stylesheet">
+<!-- end -->
+
+<!-- Подключение css -->
+	<link rel="stylesheet" href="css/libs-min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+<!-- Font-Awesome -->
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"> -->
+
+<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Recaptcha -->
+	<script async src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- Yandex map -->
+	<script async src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+<!--[if lt IE 9]>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	
+<!-- Modals -->
+	<div style="display: none">
+		<div id="feedback-modal" class="feedback-modal">
+			<span class="close-modal arcticmodal-close"></span>
+			<form class="feedback-form">
+				<h3>Форма обратной связи</h3>
+
+				<label>
+					<span>Имя*</span>
+					<input type="text" name="aname">
+				</label>
+
+				<label>
+					<span>Телефон*</span>
+					<input type="text">
+				</label>
+
+				<label>
+					<span>Удобное время для звонка:</span>
+					<input type="text">
+				</label>
+
+				<div class="g-recaptcha" data-sitekey="6Lcg4msUAAAAAJEOVTuSlaMSTpkFEe8NGdQv3q1X"></div>
+
+				<p>Отправляя форму вы соглашаетесь на обработку персональных данных</p>
+				<p>* — Помечены поля, которые необходимо заполнить</p>
+
+				<button class="feedback"><span>Заказать</span></button>
+			</form>
+
+		</div>
+	</div>
+
+<!-- HEADER -->
+	<header class="header" id="header">
+		<div class="container">
+			
+			<div class="header-wrap">
+
+				<div class="hamburger"><a href="#"></a></div>
+				<div class="hader-cart hader-cart-adp">
+					<a href="#"><i class="i-cart"></i><span>0</span></a>
+				</div>
+
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.svg" alt="">
+					</a>
+				</div>
+				
+				<div class="header-info">
+					
+					<div class="header-info-left">
+						<div class="header-phones">
+							<a href="tel:+79816860301">+7(981)686-03-01</a>
+							<a href="tel:88122441011">8(812)244-10-11</a>
+						</div>
+						
+						<form class="header-search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+
+					<div class="header-info-right">
+						<div class="hader-cart">
+							<a href="#"><i class="i-cart"></i>Корзина: <span>0</span></a>
+						</div>
+						<a href="#feedback-modal" class="feedback"><span>Заказать звонок</span></a>
+					</div>
+
+				</div>
+
+				<div class="header-info-adp">
+
+					<div class="header-phones header-phones-adp">
+						<a href="tel:+79816860301">+7(981)686-03-01</a><br>
+						<a href="tel:88122441011">8(812)244-10-11</a>
+					</div>
+
+					<div class="header-info-adp-wrap">
+						<form class="header-search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+						<a href="#feedback-modal" class="feedback"><span>Заказать звонок</span></a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="navigation">
+				<div class="hamb-close"><a href="#"></a></div>
+				<ul class="nav nav-desctop">
+					<li><a href="index.html">Главная</a></li>
+					<li>
+						<a href="#">Каталог</a>
+						<ul>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="about.html">О продукции</a></li>
+					<!-- <li><a href="production.html">Наше производство</a></li> -->
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="reviews.html">Отзывы</a></li>
+					<li><a href="gallery.html">Галерея</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</header>
+<!-- end HEADER -->
+
+<!-- CONTENT -->
+<div class="content">
+
+	<div class="container">
+		<div class="page">
+
+			<ul class="breadcrumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li>"Восток-Классик" Г-800-02</li>
+			</ul>
+			
+			<!-- <h1 class="page-title">Собрать лестницу</h1> -->
+
+			<!-- page -->
+			<div class="collect-stairs">
+				
+				<div class="collect-stairs-wrap">
+					<h1 class="page-title">Собрать лестницу</h1>
+					<p>
+						Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет оценить значение позиций, занимаемых участниками в отношении 
+					</p>
+				</div>
+
+				<form action="" class="collect-stairs-form" method="GET">
+					
+					<!-- Поворот лестницы -->
+					<div class="collect-stairs-wrap">
+						<p class="page-title">Поворот лестницы</p>
+						<p>Выбрерите поворот:</p>
+
+						<div class="collect-wrapper">
+							
+							<div class="select-turns">
+								
+								<div class="select-turn">
+									<p class="select-turn__title">Левый</p>
+									<label class="select-turn__img select-radio">
+										<input type="radio" name="turn" value="left">
+										<img src="images/dynamic/collect/turn-left.png" alt="">
+									</label>
+								</div>
+
+								<div class="select-turn">
+									<p class="select-turn__title">Проем</p>
+									<label class="select-turn__img select-radio">
+										<input type="radio" name="turn" value="left">
+										<img src="images/dynamic/collect/turn-center.png" alt="">
+									</label>
+								</div>
+
+								<div class="select-turn">
+									<p class="select-turn__title">Правый</p>
+									<label class="select-turn__img select-radio">
+										<input type="radio" name="turn" value="left">
+										<img src="images/dynamic/collect/turn-right.png" alt="">
+									</label>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					
+					<!-- Варианты ограждения -->
+					<div class="collect-stairs-wrap">
+						<p class="page-title">Варианты ограждения</p>
+						<p>Выбрерите ограждение:</p>
+
+						<div class="collect-wrapper">
+							
+							<div class="select-fences">
+								
+								<div class="select-fence">
+									<p class="select-fence__title">Ограждение по стороне А</p>
+									<label class="select-fence__label select-radio">
+										<input type="radio" name="fences" value="left">
+										<div class="select-fence__img">
+											<img src="images/dynamic/collect/fences-1.png" alt="">
+										</div>
+										<p class="select-fence__price">900 руб.</p>
+									</label>
+								</div>
+
+								<div class="select-fence">
+									<p class="select-fence__title">Ограждение по стороне B</p>
+									<label class="select-fence__label select-radio">
+										<input type="radio" name="fences" value="left">
+										<div class="select-fence__img">
+											<img src="images/dynamic/collect/fences-2.png" alt="">
+										</div>
+										<p class="select-fence__price">3600 руб.</p>
+									</label>
+								</div>
+
+								<div class="select-fence">
+									<p class="select-fence__title">Ограждение по стороне C</p>
+									<label class="select-fence__label select-radio">
+										<input type="radio" name="fences" value="left">
+										<div class="select-fence__img">
+											<img src="images/dynamic/collect/fences-3.png" alt="">
+										</div>
+										<p class="select-fence__price">5400 руб.</p>
+									</label>
+								</div>
+
+								<div class="select-fence">
+									<p class="select-fence__title">Ограждение по стороне D</p>
+									<label class="select-fence__label select-radio">
+										<input type="radio" name="fences" value="left">
+										<div class="select-fence__img">
+											<img src="images/dynamic/collect/fences-4.png" alt="">
+										</div>
+										<p class="select-fence__price">2700 руб.</p>
+									</label>
+								</div>
+
+								<div class="select-fence">
+									<p class="select-fence__title">Ограждение по стороне E</p>
+									<label class="select-fence__label select-radio">
+										<input type="radio" name="fences" value="left">
+										<div class="select-fence__img">
+											<img src="images/dynamic/collect/fences-5.png" alt="">
+										</div>
+										<p class="select-fence__price">2900 руб.</p>
+									</label>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					
+					<!-- Пригласительные супени -->
+					<div class="collect-stairs-wrap">
+						<p class="page-title">Пригласительные супени</p>
+
+						<div class="collect-wrapper collect-wrapper-inline">
+							
+							<div class="collect-check check-invitation on-collect-check-parent">
+								
+								<div class="collect-check__content">
+									<div class="collect-check__info">
+										<label class="collect-check__check">
+											<input type="checkbox" name="invitation" class="on-collect-check">
+											<p>добавить блок <br>пригласительных ступеней</p>
+										</label>
+										<p class="collect-check__price">900 руб.</p>
+									</div>
+
+									<div class="collect-check__img">
+										<img src="images/dynamic/collect/invitations.png" alt="">
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+			
+					<!-- Ограждение верхнего проема -->
+					<div class="collect-stairs-wrap">
+						<p class="page-title">Ограждение верхнего проема</p>
+
+						<div class="collect-wrapper collect-wrapper-inline">
+							
+							<div class="collect-check check-upperhall on-collect-check-parent">
+								
+								<div class="collect-check__content">
+									<div class="collect-check__info">
+										<label class="collect-check__check">
+											<input type="checkbox" name="upperhall" class="on-collect-check">
+											<p>добавить ограждение <br>верхнего проема</p>
+										</label>
+										<p class="collect-check__price">900 руб.</p>
+									</div>
+
+									<div class="collect-check__img">
+										<img src="images/dynamic/collect/upper-aperture.png" alt="">
+									</div>
+								</div>
+
+
+								<div class="collect-check__inputs on-collect-check-wrap">
+									<div class="collect-check__inputs-wrap">
+										
+										<label class="collect-check__input">
+											<p>введите длину верхнего проема в погонных метрах:</p>
+											<input type="text" name="upperhall_length">
+										</label>
+										
+										<label class="collect-check__input">
+											<p>введите кол-во столбов для ограждения верхнего проема:</p>
+											<input type="text" name="upperhall_pillars">
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Виды балясин -->
+					<div class="collect-stairs-wrap">
+						<p class="page-title">Виды балясин</p>
+						<p>Выбрерите столбы:</p>
+
+						<div class="collect-wrapper">
+							
+							<div class="select-balusters">
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-1.png" alt="">
+											</div>
+											<span class="select-baluster__name">Столб №1</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-2.png" alt="">
+											</div>
+											<span class="select-baluster__name">Балясина №2</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-3.png" alt="">
+											</div>
+											<span class="select-baluster__name">Столб Балясина №3</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-4.png" alt="">
+											</div>
+											<span class="select-baluster__name">Балясина №4</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-5.png" alt="">
+											</div>
+											<span class="select-baluster__name">Балясина №5</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-6.png" alt="">
+											</div>
+											<span class="select-baluster__name">Балясина №6</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-7.png" alt="">
+											</div>
+											<span class="select-baluster__name">Балясина №7</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-8.png" alt="">
+											</div>
+											<span class="select-baluster__name">Балясина №8</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-9.png" alt="">
+											</div>
+											<span class="select-baluster__name">Балясина №9</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-10.png" alt="">
+											</div>
+											<span class="select-baluster__name">Балясина №10</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-11.png" alt="">
+											</div>
+											<span class="select-baluster__name">Балясина №11</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-baluster">
+									<label class="select-radio">
+										<input type="radio" name="baluster" value="left">
+										<div class="select-baluster__wrap">
+											<div class="select-baluster__img">
+												<img src="images/dynamic/collect/baluster-12.png" alt="">
+											</div>
+											<span class="select-baluster__name">Балясина №12</span>
+										</div>
+									</label>
+								</div>
+								
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Виды столбов -->
+					<div class="collect-stairs-wrap">
+						<p class="page-title">Виды столбов</p>
+						<p>Выбрерите балясины:</p>
+
+						<div class="collect-wrapper">
+							
+							<div class="select-pillars">
+								
+								<div class="select-pillar">
+									<label class="select-pillar__label select-radio">
+										<input type="radio" name="pillars" value="1">
+										<div class="select-pillar__img">
+											<img src="images/dynamic/collect/pillar-1.png" alt="">
+										</div>
+										<span class="select-pillar__title">Столб №1</span>
+									</label>
+								</div>
+
+								<div class="select-pillar">
+									<label class="select-pillar__label select-radio">
+										<input type="radio" name="pillars" value="2">
+										<div class="select-pillar__img">
+											<img src="images/dynamic/collect/pillar-2.png" alt="">
+										</div>
+										<span class="select-pillar__title">Столб №2</span>
+									</label>
+								</div>
+
+								<div class="select-pillar">
+									<label class="select-pillar__label select-radio">
+										<input type="radio" name="pillars" value="3">
+										<div class="select-pillar__img">
+											<img src="images/dynamic/collect/pillar-3.png" alt="">
+										</div>
+										<span class="select-pillar__title">Столб №3</span>
+									</label>
+								</div>
+
+								<div class="select-pillar">
+									<label class="select-pillar__label select-radio">
+										<input type="radio" name="pillars" value="4">
+										<div class="select-pillar__img">
+											<img src="images/dynamic/collect/pillar-4.png" alt="">
+										</div>
+										<span class="select-pillar__title">Столб №4</span>
+									</label>
+								</div>
+
+								<div class="select-pillar">
+									<label class="select-pillar__label select-radio">
+										<input type="radio" name="pillars" value="5">
+										<div class="select-pillar__img">
+											<img src="images/dynamic/collect/pillar-5.png" alt="">
+										</div>
+										<span class="select-pillar__title">Столб №5</span>
+									</label>
+								</div>
+
+								<div class="select-pillar">
+									<label class="select-pillar__label select-radio">
+										<input type="radio" name="pillars" value="6">
+										<div class="select-pillar__img">
+											<img src="images/dynamic/collect/pillar-6.png" alt="">
+										</div>
+										<span class="select-pillar__title">Столб №6</span>
+									</label>
+								</div>
+
+								<div class="select-pillar">
+									<label class="select-pillar__label select-radio">
+										<input type="radio" name="pillars" value="7">
+										<div class="select-pillar__img">
+											<img src="images/dynamic/collect/pillar-7.png" alt="">
+										</div>
+										<span class="select-pillar__title">Столб №7</span>
+									</label>
+								</div>
+
+								<div class="select-pillar">
+									<label class="select-pillar__label select-radio">
+										<input type="radio" name="pillars" value="8">
+										<div class="select-pillar__img">
+											<img src="images/dynamic/collect/pillar-8.png" alt="">
+										</div>
+										<span class="select-pillar__title">Столб №8</span>
+									</label>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Варианты отделки лестницы -->
+					<div class="collect-stairs-wrap">
+						<p class="page-title">Варианты отделки лестницы</p>
+						<p>Выбрерите отделку:</p>
+
+						<div class="collect-wrapper">
+							
+							<div class="select-decorations">
+
+								<div class="select-decoration">
+									<label class="select-radio">
+										<input type="radio" name="decoration" value="left">
+										<div class="select-decoration__wrap">
+											<div class="select-decoration__img">
+												<img src="images/dynamic/collect/decoration-1.png" alt="">
+											</div>
+											<span class="select-decoration__name">Без отделки </span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-decoration">
+									<label class="select-radio">
+										<input type="radio" name="decoration" value="left">
+										<div class="select-decoration__wrap">
+											<div class="select-decoration__img">
+												<img src="images/dynamic/collect/decoration-2.png" alt="">
+											</div>
+											<span class="select-decoration__name">Лак</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-decoration">
+									<label class="select-radio">
+										<input type="radio" name="decoration" value="left">
+										<div class="select-decoration__wrap">
+											<div class="select-decoration__img">
+												<img src="images/dynamic/collect/decoration-3.png" alt="">
+											</div>
+											<span class="select-decoration__name">Лак + тон №3</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-decoration">
+									<label class="select-radio">
+										<input type="radio" name="decoration" value="left">
+										<div class="select-decoration__wrap">
+											<div class="select-decoration__img">
+												<img src="images/dynamic/collect/decoration-4.png" alt="">
+											</div>
+											<span class="select-decoration__name">Лак + тон №5</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-decoration">
+									<label class="select-radio">
+										<input type="radio" name="decoration" value="left">
+										<div class="select-decoration__wrap">
+											<div class="select-decoration__img">
+												<img src="images/dynamic/collect/decoration-5.png" alt="">
+											</div>
+											<span class="select-decoration__name">Лак + тон №1</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-decoration">
+									<label class="select-radio">
+										<input type="radio" name="decoration" value="left">
+										<div class="select-decoration__wrap">
+											<div class="select-decoration__img">
+												<img src="images/dynamic/collect/decoration-6.png" alt="">
+											</div>
+											<span class="select-decoration__name">Лак + тон №2</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-decoration">
+									<label class="select-radio">
+										<input type="radio" name="decoration" value="left">
+										<div class="select-decoration__wrap">
+											<div class="select-decoration__img">
+												<img src="images/dynamic/collect/decoration-7.png" alt="">
+											</div>
+											<span class="select-decoration__name">Лак + тон №4</span>
+										</div>
+									</label>
+								</div>
+
+								<div class="select-decoration">
+									<label class="select-radio">
+										<input type="radio" name="decoration" value="left">
+										<div class="select-decoration__wrap">
+											<div class="select-decoration__img">
+												<img src="images/dynamic/collect/decoration-8.png" alt="">
+											</div>
+											<span class="select-decoration__name">Лак + тон №6</span>
+										</div>
+									</label>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Дополнительно -->
+					<div class="collect-additional">
+						<p class="page-title">Дополнительно</p>
+						
+						<!-- Доставка -->
+						<div class="additional-radio">
+							<p class="additional-radio__title">Выбрерите способ доставки:</p>
+							
+							<div class="additional-radio__wrap">
+								<label>
+									<input type="radio" name="delivery" value="at-city">
+									<p>по городу (500 р)</p>
+								</label>
+							</div>
+
+							<div class="additional-radio__wrap">
+								<label>
+									<input type="radio" name="delivery" value="at-region">
+									<p>по области (2000 р)</p>
+								</label>
+							</div>
+
+							<div class="additional-radio__wrap">
+								<label>
+									<input type="radio" name="delivery" value="pick-up">
+									<p>Самовывоз</p>
+								</label>
+							</div>
+						</div>
+					
+						<!-- Монтаж -->
+						<div class="additional-checkbox">
+							<div class="additional-checkbox__wrap">
+								<label>
+									<input type="checkbox" name="installation" value="true">
+									<p>Монтаж (2000 р)</p>
+								</label>
+							</div>
+						</div>
+					</div>
+					
+				</form>
+				
+				<!-- Заказ -->
+				<div class="collect-order-info">
+					<p class="page-title">Ваша заявка</p>
+					
+					<div class="collect-order">
+
+						<!-- <div class="collect-order__top">
+							<p>№ 331</p>
+						</div> -->
+
+						<div class="collect-order__wrap">
+							
+							<div class="collect-order__img">
+								<img src="images/dynamic/collect/main-collect-stair.png" alt="">
+							</div>
+
+							<div class="collect-order__content">
+								
+								<p class="collect-order__name">"Восток-Классик" Г-800-02</p>
+								<ul class="collect-order__list">
+									<li>
+										<span class="prop">
+											Габариты, мм: 1345х2150мм <br>
+											Высота последней ступени, мм: 2500мм
+										</span>
+										<span class="value">33 600 руб.</span>
+									</li>
+									<li>
+										<span class="prop">Балюстрада по стороне A</span>
+										<span class="value">900 руб.</span>
+									</li>
+									<li>
+										<span class="prop">Балясина№1</span>
+										<span class="value">900 руб.</span>
+									</li>
+									<li>
+										<span class="prop">Лак + тон №1</span>
+										<span class="value">900 руб.</span>
+									</li>
+									<li>
+										<span class="prop">Забежные ступени</span>
+										<span class="value">900 руб.</span>
+									</li>
+									<li>
+										<span class="prop">Доставка: по городу</span>
+										<span class="value">500 руб.</span>
+									</li>
+									<li>
+										<span class="prop">Монтаж</span>
+										<span class="value">2000 руб.</span>
+									</li>
+								</ul>
+
+								<div class="collect-order__total-price">
+									<p>итого: <span>33 600 руб.</span></p>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<div class="collect-order-bottom">
+
+						<div class="collect-btns">
+							<p><a href="#" class="print">Печать</a></p>
+							<p><a href="#" class="pdf">Скачать PDF</a></p>
+						</div>
+						
+						<div class="collect-submit">
+							<!-- <button class="feedback"><span>оставить заявку</span></button> -->
+							<a href="#do-order" class="feedback"><span>оставить заявку</span></a>
+						</div>
+
+					</div>
+
+					<div style="display: none">
+						<div id="do-order" class="do-order-modal">
+							<form class="feedback-form do-order">
+								<span class="close-modal arcticmodal-close"></span>
+
+								<input type="hidden" name="id" value="32">
+								<input type="hidden" name="name" value='Восток-Классик" Г-800-02'>
+								<input type="hidden" name="turn" value="left">
+								<input type="hidden" name="fences" value="B">
+								<input type="hidden" name="invitation" value="false">
+								<input type="hidden" name="upperhall" value="true">
+								<input type="hidden" name="upperhall_length" value="7">
+								<input type="hidden" name="upperhall_pillars" value="5">
+								<input type="hidden" name="baluster" value="7">
+								<input type="hidden" name="pillars" value="3">
+								<input type="hidden" name="decoration" value="2">
+								<input type="hidden" name="delivery" value="at-city">
+								<input type="hidden" name="installation" value="true">
+
+								<div class="do-order__top">
+									<h3>Заполните контактные данные</h3>
+								</div>
+
+								<div class="do-order__content">
+
+									<div class="do-order__product">Заказ: <span>"Восток-Классик" Г-800-02</span></div>
+
+									<label>
+										<span>ФИО*</span>
+										<input type="text" name="full-name">
+									</label>
+
+									<label>
+										<span>Ваш телефон*</span>
+										<input type="text" name="phone">
+									</label>
+
+									<label>
+										<span>Ваша почта*</span>
+										<input type="email" name="email">
+									</label>
+
+									<label>
+										<span>Ваш город*</span>
+										<input type="text" name="city">
+									</label>
+
+									<label>
+										<span>Удобное время для звонка:</span>
+										<input type="time" name="time-call">
+									</label>
+
+									<div class="g-recaptcha" data-sitekey="6Lcg4msUAAAAAJEOVTuSlaMSTpkFEe8NGdQv3q1X"></div>
+
+									<p>Отправляя форму вы соглашаетесь на обработку персональных данных</p>
+									<p>* — Помечены поля, которые необходимо заполнить</p>
+
+									<button class="feedback" type="submit"><span>Оставить заявку</span></button>
+								</div>
+
+
+							</form>
+
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>	
+			<!-- end page -->
+
+		</div>
+	</div>
+
+</div>
+<!-- end CONTENT -->
+
+<!-- FOOTER -->
+	<footer class="footer" id="footer">
+		<div class="container">
+			
+			<ul class="f-nav">
+				<li><a href="#">Главная</a></li>
+				<!-- <li><a href="#">Описание продукции</a></li> -->
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">О продукции</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Галерея</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			
+			<div class="f-wrap">
+				<div class="f-map">
+					<div class="f-map__marks">
+						<div class="map-address active on-map-address" data-map="#f-map-one">
+							<p>
+								пр. Народного Ополчения, д. 22,<br> Центр строительства <br>«Русская деревня»,<br> 2-й этаж, секция 209
+							</p>
+							<a href="tel:8126556042">Тел.: (812) 655-60-42</a>
+						</div>
+						<div class="map-address on-map-address" data-map="#f-map-two">
+							<p>
+								Парголово Выборгское шоссе, 369, корп. 6, 2-ой этаж, секция 209
+							</p>
+							<a href="tel:8126556042">Тел.: (812) 655-60-42</a>
+						</div>
+					</div>
+					<div class="f-map__maps">
+						<div class="f-map__map" id="f-map-one"><a href="#" class="close-arctic"></a></div>
+						<div class="f-map__map f-map__map-two" id="f-map-two"><a href="#" class="close-arctic"></a></div>
+					</div>
+				</div>
+
+				<div class="f-bottom">
+					<div class="f-bottom__left">
+						<p>
+							тел.: (812) 244-10-11 <br>
+							факс: (812) 612-93-63 <br>
+							E-mail: lignars@mail.ru newstair@gmail.com
+						</p>
+					</div>
+					<div class="f-bottom__right">
+						<p>
+							© 2017 ООО «Лигнариус» Винтовые лестницы для дома. <br>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div style="display: none">
+				<div class="f-map-one" id="f-map-one"></div>
+			</div> -->
+
+		</div>
+	</footer>
+<!-- end FOOTER -->
+
+<!-- Подключение javscript -->
+	<script src="js/libs-min.js"></script>
+	<script src="js/common.js"></script>
+<!-- end -->
+
+</body>
+</html>

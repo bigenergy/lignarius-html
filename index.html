@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Шаблон</title>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="AnalyticumPlus"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,700" rel="stylesheet">
+<!-- end -->
+
+<!-- Подключение css -->
+	<link rel="stylesheet" href="css/libs-min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Recaptcha -->
+	<script async src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- Yandex map -->
+	<script async src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+<!--[if lt IE 9]>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	
+<!-- Modals -->
+	<div style="display: none">
+		<div id="feedback-modal" class="feedback-modal">
+			<span class="close-modal arcticmodal-close"></span>
+			<form class="feedback-form">
+				<h3>Форма обратной связи</h3>
+
+				<label>
+					<span>Имя*</span>
+					<input type="text" name="aname">
+				</label>
+
+				<label>
+					<span>Телефон*</span>
+					<input type="text">
+				</label>
+
+				<label>
+					<span>Удобное время для звонка:</span>
+					<input type="text">
+				</label>
+
+				<div class="g-recaptcha" data-sitekey="6Lcg4msUAAAAAJEOVTuSlaMSTpkFEe8NGdQv3q1X"></div>
+
+				<p>Отправляя форму вы соглашаетесь на обработку персональных данных</p>
+				<p>* — Помечены поля, которые необходимо заполнить</p>
+
+				<button class="feedback"><span>Заказать</span></button>
+			</form>
+
+		</div>
+	</div>
+
+<!-- HEADER -->
+	<header class="header" id="header">
+		<div class="container">
+			
+			<div class="header-wrap">
+
+				<div class="hamburger"><a href="#"></a></div>
+				<div class="hader-cart hader-cart-adp">
+					<a href="#"><i class="i-cart"></i><span>0</span></a>
+				</div>
+
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.svg" alt="">
+					</a>
+				</div>
+				
+				<div class="header-info">
+					
+					<div class="header-info-left">
+						<div class="header-phones">
+							<a href="tel:+79816860301">+7(981)686-03-01</a>
+							<a href="tel:88122441011">8(812)244-10-11</a>
+						</div>
+						
+						<form class="header-search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+
+					<div class="header-info-right">
+						<div class="hader-cart">
+							<a href="#"><i class="i-cart"></i>Корзина: <span>0</span></a>
+						</div>
+						<a href="#feedback-modal" class="feedback"><span>Заказать звонок</span></a>
+					</div>
+
+				</div>
+
+				<div class="header-info-adp">
+
+					<div class="header-phones header-phones-adp">
+						<a href="tel:+79816860301">+7(981)686-03-01</a><br>
+						<a href="tel:88122441011">8(812)244-10-11</a>
+					</div>
+
+					<div class="header-info-adp-wrap">
+						<form class="header-search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+						<a href="#feedback-modal" class="feedback"><span>Заказать звонок</span></a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="navigation">
+				<div class="hamb-close"><a href="#"></a></div>
+				<ul class="nav nav-desctop">
+					<li><a href="index.html">Главная</a></li>
+					<li>
+						<a href="#">Каталог</a>
+						<ul>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Виды лестниц</a>
+								<ul>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+									<li><a href="catalog.html">подкатегория</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="about.html">О продукции</a></li>
+					<!-- <li><a href="production.html">Наше производство</a></li> -->
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="reviews.html">Отзывы</a></li>
+					<li><a href="gallery.html">Галерея</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</header>
+<!-- end HEADER -->
+
+<!-- CONTENT -->
+<div class="content">
+	
+	<!-- Карусель -->
+	<section class="top">
+		<div class="top-carousel" id="top-carousel">
+
+			<div class="top-carousel__slide" style="background-image: url(images/dynamic/slide.jpg);">
+				<div class="container">
+
+					<div class="slide-titles">
+						<p class="slide-titles__top">Санкт-Петербург</p>
+						<p class="slide-titles__middle">Готовые лестницы из массива сосны</p>
+						<p class="slide-titles__bottom">Доставка в любой регион России</p>
+					</div>
+
+				</div>	
+			</div>
+
+			<div class="top-carousel__slide" style="background-image: url(images/dynamic/slide.jpg);">
+				<div class="container">
+
+					<div class="slide-titles">
+						<p class="slide-titles__top">Москва</p>
+						<p class="slide-titles__middle">Готовые лестницы из массива сосны</p>
+						<p class="slide-titles__bottom">Доставка в любой регион России</p>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="top-carousel__slide" style="background-image: url(images/dynamic/slide.jpg);">
+				<div class="container">
+
+					<div class="slide-titles">
+						<p class="slide-titles__top">Казань</p>
+						<p class="slide-titles__middle">Готовые лестницы из массива сосны</p>
+						<p class="slide-titles__bottom">Доставка в любой регион России</p>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+	</section>
+	
+	<!-- Подбор лестниц -->
+	<section class="select-stairs">
+		<div class="container">
+			
+			<h2 class="title select-stairs__title">Подбор лестниц</h2>
+
+			<div class="type-stairs" id="type-stairs">
+				<a href="#" class="type-stair">
+					<span data-mh="stair-title">Г-образные</span>
+					<div class="type-stair__img" data-mh="stair-image">
+						<div class="type-stair__img-wrap">
+							<img src="images/icons/category/1.png" alt="">
+							<img class="img-hover" src="images/icons/category/1-1.png" alt="">
+						</div>
+					</div>
+				</a>
+
+				<a href="#" class="type-stair">
+					<span data-mh="stair-title">П-образные</span>
+					<div class="type-stair__img" data-mh="stair-image">
+						<div class="type-stair__img-wrap">
+							<img src="images/icons/category/2.png" alt="">
+							<img class="img-hover" src="images/icons/category/2-1.png" alt="">
+						</div>
+					</div>
+				</a>
+
+				<a href="#" class="type-stair">
+					<span data-mh="stair-title">Прямой марш</span>
+					<div class="type-stair__img" data-mh="stair-image">
+						<div class="type-stair__img-wrap">
+							<img src="images/icons/category/3.png" alt="">
+							<img class="img-hover" src="images/icons/category/3-1.png" alt="">
+						</div>
+					</div>
+				</a>
+
+				<a href="#" class="type-stair">
+					<span data-mh="stair-title">Гусиный шаг</span>
+					<div class="type-stair__img" data-mh="stair-image">
+						<div class="type-stair__img-wrap">
+							<img src="images/icons/category/4.png" alt="">
+							<img class="img-hover" src="images/icons/category/4-1.png" alt="">
+						</div>
+					</div>
+				</a>
+
+				<a href="#" class="type-stair">
+					<span data-mh="stair-title">Лестницы на заказ</span>
+					<div class="type-stair__img" data-mh="stair-image">
+						<div class="type-stair__img-wrap">
+							<img src="images/icons/category/5.png" alt="">
+							<img class="img-hover" src="images/icons/category/5-1.png" alt="">
+						</div>
+					</div>
+				</a>
+			</div>
+
+		</div>
+	</section>
+	
+	<!-- Хиты продаж -->
+	<section class="hits-stair">
+		<div class="container">
+			
+			<h2 class="title hits-stair__title">Хиты продаж</h2>
+			
+			<div class="hits-stair-content home-product-slider">
+
+				<div class="home-product-slide">
+				
+					<div class="home-product">
+						<div class="home-product__content">
+							<a href="#" class="home-product__img">
+								<img src="images/dynamic/wfw.jpg" alt="">
+							</a>
+							<p class="home-product__price">от 24 900 р.</p>
+						</div>
+						<p class="home-product__name"><a href="#">"восток-элегант" п-790-01</a></p>
+					</div>
+
+				</div>
+
+				<div class="home-product-slide">
+
+					<div class="home-product">
+						<div class="home-product__content">
+							<a href="#" class="home-product__img">
+								<img src="images/dynamic/wfw.jpg" alt="">
+							</a>
+							<p class="home-product__price">от 24 900 р.</p>
+						</div>
+						<p class="home-product__name"><a href="#">"восток-элегант" п-790-01</a></p>
+					</div>
+					
+				</div>
+
+				<div class="home-product-slide">
+
+					<div class="home-product">
+						<div class="home-product__content">
+							<a href="#" class="home-product__img">
+								<img src="images/dynamic/wfw.jpg" alt="">
+							</a>
+							<p class="home-product__price">от 24 900 р.</p>
+						</div>
+						<p class="home-product__name"><a href="#">"восток-элегант" п-790-01</a></p>
+					</div>
+					
+				</div>
+
+				<div class="home-product-slide">
+
+					<div class="home-product">
+						<div class="home-product__content">
+							<a href="#" class="home-product__img">
+								<img src="images/dynamic/wfw.jpg" alt="">
+							</a>
+							<p class="home-product__price">от 24 900 р.</p>
+						</div>
+						<p class="home-product__name"><a href="#">"восток-элегант" п-790-01</a></p>
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	
+	<!-- Индивидуальный проект -->
+	<section class="individual">
+		<div class="container">
+			
+			<div class="indiv-project">
+				<h2>Лестницы по индивидуальному проекту</h2>
+				<ul>
+					<li>Разработка конструкции лестницы по заданным размерам.</li>
+					<li>Возможность выбора породы дерева и их комбинаций из различных пород.</li>
+					<li>Качественное 3-ех слойное покрытие профессиональными лаками и красителями.</li>
+					<li>Особый контроль за подбором материалов и всеми этапами изготовления.</li>
+					<li>Год дополнительной гарантии на лестницу выполненную на заказ.</li>
+				</ul>
+				<a href="#" class="indiv-project__order">Заказать</a>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Лестницы в наличии -->
+	<section class="stock-stair">
+		<div class="container">
+			
+			<h2 class="title stock-stair__title">Лестницы в наличии</h2>
+
+			<div class="stock-stair-content home-product-slider">
+
+				<div class="home-product-slide">
+
+					<div class="home-product">
+						<div class="home-product__content">
+							<span class="home-product__stock"><i class="fa fa-check"></i> в наличии</span>
+							<a href="#" class="home-product__img">
+								<img src="images/dynamic/wfw.jpg" alt="">
+							</a>
+							<p class="home-product__price">от 24 900 р.</p>
+						</div>
+						<p class="home-product__name"><a href="#">"восток-элегант" п-790-01</a></p>
+					</div>
+
+				</div>
+
+				<div class="home-product-slide">
+
+					<div class="home-product">
+						<div class="home-product__content">
+							<span class="home-product__stock"><i class="fa fa-check"></i> в наличии</span>
+							<a href="#" class="home-product__img">
+								<img src="images/dynamic/wfw.jpg" alt="">
+							</a>
+							<p class="home-product__price">от 24 900 р.</p>
+						</div>
+						<p class="home-product__name"><a href="#">"восток-элегант" п-790-01</a></p>
+					</div>
+					
+				</div>
+
+				<div class="home-product-slide">
+
+					<div class="home-product">
+						<div class="home-product__content">
+							<span class="home-product__stock"><i class="fa fa-check"></i> в наличии</span>
+							<a href="#" class="home-product__img">
+								<img src="images/dynamic/wfw.jpg" alt="">
+							</a>
+							<p class="home-product__price">от 24 900 р.</p>
+						</div>
+						<p class="home-product__name"><a href="#">"восток-элегант" п-790-01</a></p>
+					</div>
+					
+				</div>
+
+				<div class="home-product-slide">
+
+					<div class="home-product">
+						<div class="home-product__content">
+							<span class="home-product__stock"><i class="fa fa-check"></i> в наличии</span>
+							<a href="#" class="home-product__img">
+								<img src="images/dynamic/wfw.jpg" alt="">
+							</a>
+							<p class="home-product__price">от 24 900 р.</p>
+						</div>
+						<p class="home-product__name"><a href="#">"восток-элегант" п-790-01</a></p>
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Преимущества компании -->
+	<section class="advantages">
+		<div class="container">
+			
+			<h2 class="title advantages__title">Преимущества компании</h2>
+
+			<div class="list-advantages">
+
+				<div class="item-advant">
+					<div class="item-advant__img item-advant__img-1" data-mh="advantage-image"></div>
+					<p class="item-advant__text">Более 350 моделей <br>лестниц</p>
+				</div>
+
+				<div class="item-advant">
+					<div class="item-advant__img item-advant__img-2" data-mh="advantage-image"></div>
+					<p class="item-advant__text">Доставка и монтаж <br>в один день</p>
+				</div>
+
+				<div class="item-advant">
+					<div class="item-advant__img item-advant__img-3" data-mh="advantage-image"></div>
+					<p class="item-advant__text">Доставка во все города <br>России</p>
+				</div>
+
+				<div class="item-advant">
+					<div class="item-advant__img item-advant__img-4" data-mh="advantage-image"></div>
+					<p class="item-advant__text">Комплектация лестницы <br>по желанию заказчика</p>
+				</div>
+
+				<div class="item-advant">
+					<div class="item-advant__img item-advant__img-6" data-mh="advantage-image"></div>
+					<p class="item-advant__text">Возможность <br>самостоятельной сборки</p>
+				</div>
+
+				<div class="item-advant">
+					<div class="item-advant__img item-advant__img-5" data-mh="advantage-image"></div>
+					<p class="item-advant__text">Комбинированная <br>покраска</p>
+				</div>
+
+				<div class="item-advant">
+					<div class="item-advant__img item-advant__img-7" data-mh="advantage-image"></div>
+					<p class="item-advant__text">Консультация при<br> самостоятельной сборки</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<div class="section-bottom">
+		
+		<!-- Лигнариус (описание) -->
+		<section class="short-description">
+			<div class="container">
+
+				<h3 class="short-description__title">«лигнариус»<span>изготовление деревянных лестниц для дома в петербурге.</span></h3>
+		
+				<div class="short-desc on-read-more" data-show-elements="2">
+					<p>
+						Компания «Лигнариус» производит современные деревянные лестницы различных типов. Более 15 лет успешной работы в сфере продаж лестниц – это лучшее свидетельство качества, надежности и долговечности нашей продукции.
+					</p>
+					<p>
+						Всегда ориентируясь на спрос покупателей, специалисты компании делают основной акцент на наиболее востребованные позиции, предлагая типовые готовые деревянные лестницы серии «Восток», предназначенные для использования внутри жилых помещений. Это доступные по цене лестницы для дома, а также недорогие лестницы для дачи.
+					</p>
+					<p>
+						Готовые лестницы серии «Восток» изготавливаются на наших собственных производственных мощностях. Стоимость деревянной лестницы такого типа минимальна. Кроме того, готовые винтовые лестницы для дома отличается простотой монтажа. Почему стоит купить лестницы для дачи или дома у нас? Все лестницы из дерева от компании «Лигнариус» отличаются рядом принципиальных преимуществ:
+					</p>
+					<ul>
+						<li>винтовые деревянные лестницы для дачи требуют минимум свободного пространства для установки;</li>
+						<li>мы предлагаем изготовление лестниц из срощенной сосны – надежного и специально отшлифованного материала, который подготовлен к покрытию;</li>
+						<li>недорогие винтовые лестницы для дома подходят для самостоятельной сборки, они сопровождаются подробной инструкцией;</li>
+						<li>если вы купите лестницу «Восток», то сможете привезти ее домой на багажнике автомобиля, поскольку изделие поставляется в компактной упаковке.</li>
+					</ul>
+					<p>
+						Производятся винтовые лестницы в СПб. Благодаря максимальной приближенности к главным авто- и железнодорожным магистралям это позволяет существенно сэкономить как на стоимости доставки сырья, так и на стоимости доставки готовых лестниц потребителю. Поэтому наши цены на деревянные лестницы максимально доступны.
+					</p>
+					<p>
+						Мы не забываем, что вместе с сочетанием лучших потребительских свойств цена готовой лестницы должна быть приемлемой для покупателей. Обеспечивая производство отечественным сырьем (российская древесина) и выполняя полный производственный цикл, компания удерживает цены на винтовые лестницы на уровне, доступном большинству потребителей.
+					</p>
+				</div>
+
+
+
+			</div>
+		</section>
+
+		<!-- Новости -->
+		<section class="home-news">
+			<div class="container">
+				
+				<h2 class="title home-news__title">Новости</h2>
+			
+				<div class="home-news-content">
+
+					<div class="row">
+						<div class="col-sm-6 col-lg-3">
+							
+							<div class="news-item">
+								<a href="#" class="news-item__img" style="background-image: url(images/dynamic/news.jpg);">
+								</a>
+								<p class="news-item__name"><a href="#">продажа выставочного образца 15000 руб.</a></p>
+								<p class="news-item__date">03.03.2018</p>
+							</div>
+
+						</div>
+						<div class="col-sm-6 col-lg-3">
+
+							<div class="news-item">
+								<a href="#" class="news-item__img" style="background-image: url(images/dynamic/news.jpg);">
+								</a>
+								<p class="news-item__name"><a href="#">продажа выставочного образца 15000 руб.</a></p>
+								<p class="news-item__date">03.03.2018</p>
+							</div>
+							
+						</div>
+						<div class="col-sm-6 col-lg-3">
+
+							<div class="news-item">
+								<a href="#" class="news-item__img" style="background-image: url(images/dynamic/news.jpg);">
+								</a>
+								<p class="news-item__name"><a href="#">продажа выставочного образца 15000 руб.</a></p>
+								<p class="news-item__date">03.03.2018</p>
+							</div>
+							
+						</div>
+						<div class="col-sm-6 col-lg-3">
+
+							<div class="news-item">
+								<a href="#" class="news-item__img" style="background-image: url(images/dynamic/news.jpg);">
+								</a>
+								<p class="news-item__name"><a href="#">продажа выставочного образца 15000 руб.</a></p>
+								<p class="news-item__date">03.03.2018</p>
+							</div>
+							
+						</div>
+					</div>
+
+					<p class="home-news-content__more">
+						<a href="#">Все новости</a>
+					</p>
+
+				</div>
+
+			</div>
+		</section>
+		
+		<!-- Форма обратной связи -->
+		<section class="home-feedback">
+			<div class="container">
+				
+				<form class="feedback-form">
+					<h3>Форма обратной связи</h3>
+					
+					<label>
+						<span>Имя*</span>
+						<input type="text">
+					</label>
+
+					<label>
+						<span>Телефон*</span>
+						<input type="text">
+					</label>
+
+					<label>
+						<span>Удобное время для звонка:</span>
+						<input type="text">
+					</label>
+
+					<div class="g-recaptcha" data-sitekey="6Lcg4msUAAAAAJEOVTuSlaMSTpkFEe8NGdQv3q1X"></div>
+
+					<p>Отправляя форму вы соглашаетесь на обработку персональных данных</p>
+					<p>* — Помечены поля, которые необходимо заполнить</p>
+
+					<button class="feedback"><span>Заказать</span></button>
+				</form>
+				
+			</div>
+		</section>
+
+	</div>
+</div>
+<!-- end CONTENT -->
+
+<!-- FOOTER -->
+	<footer class="footer" id="footer">
+		<div class="container">
+			
+			<ul class="f-nav">
+				<li><a href="#">Главная</a></li>
+				<!-- <li><a href="#">Описание продукции</a></li> -->
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">О продукции</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Галерея</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			
+			<div class="f-wrap">
+				<div class="f-map">
+					<div class="f-map__marks">
+						<div class="map-address active on-map-address" data-map="#f-map-one">
+							<p>
+								пр. Народного Ополчения, д. 22,<br> Центр строительства <br>«Русская деревня»,<br> 2-й этаж, секция 209
+							</p>
+							<a href="tel:8126556042">Тел.: (812) 655-60-42</a>
+						</div>
+						<div class="map-address on-map-address" data-map="#f-map-two">
+							<p>
+								Парголово Выборгское шоссе, 369, корп. 6, 2-ой этаж, секция 209
+							</p>
+							<a href="tel:8126556042">Тел.: (812) 655-60-42</a>
+						</div>
+					</div>
+					<div class="f-map__maps">
+						<div class="f-map__map" id="f-map-one"><a href="#" class="close-arctic"></a></div>
+						<div class="f-map__map f-map__map-two" id="f-map-two"><a href="#" class="close-arctic"></a></div>
+					</div>
+				</div>
+
+				<div class="f-bottom">
+					<div class="f-bottom__left">
+						<p>
+							тел.: (812) 244-10-11 <br>
+							факс: (812) 612-93-63 <br>
+							E-mail: lignars@mail.ru newstair@gmail.com
+						</p>
+					</div>
+					<div class="f-bottom__right">
+						<p>
+							© 2017 ООО «Лигнариус» Винтовые лестницы для дома. <br>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div style="display: none">
+				<div class="f-map-one" id="f-map-one"></div>
+			</div> -->
+
+		</div>
+	</footer>
+<!-- end FOOTER -->
+
+<!-- Подключение javscript -->
+	<script src="js/libs-min.js"></script>
+	<script src="js/common.js"></script>
+<!-- end -->
+
+</body>
+</html>
